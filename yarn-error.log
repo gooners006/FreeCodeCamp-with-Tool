@@ -1,8 +1,8 @@
 Arguments: 
-  D:\NodeJS\node.exe D:\Yarn\bin\yarn.js eslint booWho.js
+  D:\NodeJS\node.exe D:\Yarn\bin\yarn.js eslint Sorted Union\sortedUnion.js
 
 PATH: 
-  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Microchip\MPLAB C32 Suite\bin;D:\HI-TECH Software\PICC\9.70\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HI-TECH Software\PICC\PRO\9.65\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Altium Designer Summer 09\System;D:\Calibre\;D:\PICC;D:\Git\cmd;D:\NodeJS\;D:\Yarn\bin\;C:\Users\Viet Anh\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\Viet Anh\AppData\Roaming\npm;C:\Users\Viet Anh\AppData\Local\Yarn\bin
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Microchip\MPLAB C32 Suite\bin;D:\HI-TECH Software\PICC\9.70\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HI-TECH Software\PICC\PRO\9.65\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Altium Designer Summer 09\System;D:\Calibre\;D:\PICC;D:\Git\cmd;D:\NodeJS\;D:\Yarn\bin\;D:\TortoiseGit\bin;C:\Users\Viet Anh\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\Viet Anh\AppData\Roaming\npm;C:\Users\Viet Anh\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.5.1
@@ -15,20 +15,16 @@ Platform:
 
 npm manifest: 
   {
-      "name": "19032018",
+      "name": "FreeCodeCamp-with-Tool",
       "version": "1.0.0",
+      "description": "",
       "main": "index.js",
-      "author": "VietAnh",
-      "license": "MIT",
       "dependencies": {
           "babel-preset-env": "^1.6.1",
           "eslint": "^4.19.1",
-          "eslint-config-airbnb-base": "^12.1.0",
           "eslint-config-google": "^0.9.1",
-          "eslint-plugin-import": "^2.10.0",
           "husky": "^0.14.3",
-          "jest": "^22.4.3",
-          "prettier": "^1.11.1"
+          "jest": "^22.4.3"
       },
       "presets": [
           "env"
@@ -40,7 +36,19 @@ npm manifest:
           "precommit": "lint-staged"
       },
       "lint-staged": {
-          "*.js": ["eslint --fix", "git add"]
+          "*.js": [
+              "eslint --fix",
+              "git add"
+          ]
+      },
+      "devDependencies": {
+          "eslint-config-airbnb": "^16.1.0",
+          "eslint-config-airbnb-base": "^12.1.0",
+          "eslint-config-prettier": "^2.9.0",
+          "eslint-plugin-import": "^2.10.0",
+          "eslint-plugin-prettier": "^2.6.0",
+          "prettier": "1.11.1",
+          "prettier-eslint": "^8.8.1"
       }
   }
 
@@ -1898,6 +1906,14 @@ Lockfile:
       jsprim "^1.2.2"
       sshpk "^1.7.0"
   
+  husky@^0.14.3:
+    version "0.14.3"
+    resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
+    dependencies:
+      is-ci "^1.0.10"
+      normalize-path "^1.0.0"
+      strip-indent "^2.0.0"
+  
   iconv-lite@0.4.19:
     version "0.4.19"
     resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
@@ -2906,6 +2922,10 @@ Lockfile:
       semver "2 || 3 || 4 || 5"
       validate-npm-package-license "^3.0.1"
   
+  normalize-path@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-1.0.0.tgz#32d0e472f91ff345701c15a8311018d3b0a90379"
+  
   normalize-path@^2.0.1, normalize-path@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.1.1.tgz#1ab28b556e198363a8c1a6f7e6fa20137fe6aed9"
@@ -3781,6 +3801,10 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
   
+  strip-indent@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
+  
   strip-json-comments@~2.0.1:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
@@ -4157,8 +4181,8 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c eslint booWho.js
-  Directory: D:\Study\Work\FreeCodeCamp with Tool\Boo who
+  Arguments: /d /s /c eslint "Sorted Union\sortedUnion.js"
+  Directory: d:\Study\Work\FreeCodeCamp-with-Tool
   Output:
   
       at ProcessTermError.MessageError (D:\Yarn\lib\cli.js:186:110)
