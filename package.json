@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "license": "MIT",
     "devDependencies": {
         "eslint-config-airbnb": "^16.1.0",
         "eslint-config-airbnb-base": "^12.1.0",
@@ -26,7 +27,7 @@
     "scripts": {
         "test": "jest",
         "eslint": "eslint",
-        "prettier": "prettier",
+        "prettier": "prettier --tab-width 2",
         "precommit": "lint-staged"
     },
     "lint-staged": {
