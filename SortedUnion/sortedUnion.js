@@ -10,4 +10,3 @@ function uniteUnique(...arr) {
   return Array.from(set1);
 }
 module.exports = uniteUnique;
-console.log(uniteUnique([1, 3, 2], [1, [5]], [2, [5], [4]]));
