@@ -17,8 +17,6 @@ describe("test sortedUnion", () => {
       3,
       2,
       [5],
-      2,
-      [5],
       [4]
     ]);
   });
