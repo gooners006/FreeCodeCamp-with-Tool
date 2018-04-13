@@ -6,6 +6,7 @@
  */
 function convertHTML(str) {
   // &colon;&rpar;
+
   const map = new Map();
   let newStr = str;
   map.set("&", "&amp;");
