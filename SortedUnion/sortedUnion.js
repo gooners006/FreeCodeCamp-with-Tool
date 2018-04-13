@@ -9,4 +9,4 @@ function uniteUnique(...arr) {
   arr.map(x => x.map(y => set1.add(y)));
   return Array.from(set1);
 }
-module.exports = uniteUnique;
+export default uniteUnique;
