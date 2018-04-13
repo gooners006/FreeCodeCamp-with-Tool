@@ -23,19 +23,20 @@
         "babel-preset-env": "^1.6.1",
         "npm": "^5.8.0"
     },
-    "presets": [
-        "env"
-    ],
+    "babel": {
+        "presets": ["env"]
+    },
     "scripts": {
-        "test": "jest",
         "eslint": "eslint",
-        "prettier": "prettier --tab-width 2",
-        "precommit": "lint-staged"
+        "format": "prettier",
+        "precommit": "lint-staged",
+        "test": "jest"
     },
     "lint-staged": {
         "*.js": [
+            "prettier --write",
             "eslint --fix",
-            "test",
+
             "git add"
         ]
     }
