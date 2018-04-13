@@ -4,12 +4,13 @@
     "description": "",
     "license": "MIT",
     "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
         "eslint": "^4.19.1",
         "eslint-config-airbnb": "^16.1.0",
         "eslint-config-airbnb-base": "^12.1.0",
-        "eslint-config-google": "^0.9.1",
         "eslint-config-prettier": "^2.9.0",
-        "eslint-plugin-import": "^2.10.0",
+        "eslint-plugin-import": "^2.11.0",
         "eslint-plugin-prettier": "^2.6.0",
         "husky": "^0.14.3",
         "jest": "^22.4.3",
@@ -17,7 +18,6 @@
         "prettier": "1.12.0"
     },
     "dependencies": {
-        "babel-preset-env": "^1.6.1",
         "npm": "^5.8.0"
     },
     "babel": {

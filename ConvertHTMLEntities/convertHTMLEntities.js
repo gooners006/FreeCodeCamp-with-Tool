@@ -22,5 +22,5 @@ function convertHTML(str) {
 
   return newStr;
 }
-module.exports = convertHTML;
+export default convertHTML;
 convertHTML("Dolce & Gabbana");
