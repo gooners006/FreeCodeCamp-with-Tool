@@ -29,13 +29,13 @@
         "eslint": "eslint",
         "prettier": "prettier",
         "precommit": "lint-staged",
-        "test": "jest"
+        "test": "jest",
+        "prepush": "test"
     },
     "lint-staged": {
         "*.js": [
             "prettier --write",
             "eslint --fix",
-            "test",
             "git add"
         ]
     }
