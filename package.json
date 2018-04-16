@@ -30,7 +30,7 @@
         "prettier": "prettier",
         "precommit": "lint-staged",
         "test": "jest",
-        "prepush": "test"
+        "prepush": "yarn test"
     },
     "lint-staged": {
         "*.js": [
