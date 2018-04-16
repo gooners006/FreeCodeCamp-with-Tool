@@ -3,6 +3,8 @@ import booWho from "../BooWho/booWho";
 import convertHTML from "../ConvertHTMLEntities/convertHTMLEntities";
 import uniteUnique from "../SortedUnion/sortedUnion";
 import spinalCase from "../SpinalTapCase/spinalTapCase";
+import sumFibs from "../SumAllOddFibonacciNumbers/sumFibs";
+import sumPrimes from "../SumAllPrimes/sumPrimes";
 // test booWho
 describe("test booWho", () => {
   it("should return", () => {
@@ -120,5 +122,32 @@ describe("test spinalTapCase", () => {
   });
   it("should return", () => {
     expect(spinalCase("AllThe-small Things")).toEqual("all-the-small-things");
+  });
+});
+// test sumFibs
+describe("test sumFibs", () => {
+  it("should return", () => {
+    expect(sumFibs(1000)).toBe(1785);
+  });
+  it("should return", () => {
+    expect(sumFibs(4000000)).toBe(4613732);
+  });
+  it("should return", () => {
+    expect(sumFibs(4)).toBe(5);
+  });
+  it("should return", () => {
+    expect(sumFibs(75024)).toBe(60696);
+  });
+  it("should return", () => {
+    expect(sumFibs(75025)).toBe(135721);
+  });
+});
+// test sumPrimes
+describe("test sumPrimes", () => {
+  it("should return", () => {
+    expect(sumPrimes(10)).toBe(17);
+  });
+  it("should return", () => {
+    expect(sumPrimes(977)).toBe(73156);
   });
 });

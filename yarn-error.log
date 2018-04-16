@@ -1,5 +1,5 @@
 Arguments: 
-  D:\NodeJS\node.exe D:\Yarn\bin\yarn.js test
+  D:\NodeJS\node.exe D:\Yarn\bin\yarn.js test test
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Microchip\MPLAB C32 Suite\bin;D:\HI-TECH Software\PICC\9.70\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HI-TECH Software\PICC\PRO\9.65\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Altium Designer Summer 09\System;D:\Calibre\;D:\PICC;D:\Git\cmd;D:\NodeJS\;D:\Yarn\bin\;D:\TortoiseGit\bin;C:\Users\Viet Anh\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\Viet Anh\AppData\Roaming\npm;C:\Users\Viet Anh\AppData\Local\Yarn\bin
@@ -43,8 +43,8 @@ npm manifest:
       },
       "scripts": {
           "eslint": "eslint",
-          "format": "prettier",
-          "precommit": "lint-staged && yarn test",
+          "prettier": "prettier",
+          "precommit": "lint-staged",
           "test": "jest"
       },
       "lint-staged": {
@@ -5995,7 +5995,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c jest
+  Arguments: /d /s /c jest test
   Directory: D:\Study\Work\FreeCodeCamp-with-Tool
   Output:
   
