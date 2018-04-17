@@ -5,6 +5,8 @@ import uniteUnique from "../SortedUnion/sortedUnion";
 import spinalCase from "../SpinalTapCase/spinalTapCase";
 import sumFibs from "../SumAllOddFibonacciNumbers/sumFibs";
 import sumPrimes from "../SumAllPrimes/sumPrimes";
+import smallestCommon from "../SmallestCommonMultiple/smallestCommons";
+import findElement from "../FindersKeepers/findElement";
 // test booWho
 describe("test booWho", () => {
   it("should return", () => {
@@ -149,5 +151,29 @@ describe("test sumPrimes", () => {
   });
   it("should return", () => {
     expect(sumPrimes(977)).toBe(73156);
+  });
+});
+// test smallestCommon
+describe("test smallestCommon", () => {
+  it("should return", () => {
+    expect(smallestCommon([1, 5])).toBe(60);
+  });
+  it("should return", () => {
+    expect(smallestCommon([5, 1])).toBe(60);
+  });
+  it("should return", () => {
+    expect(smallestCommon([1, 13])).toBe(360360);
+  });
+  it("should return", () => {
+    expect(smallestCommon([23, 18])).toBe(6056820);
+  });
+});
+// test findElement
+describe("test findElement", () => {
+  it("should return", () => {
+    expect(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0)).toBe(8);
+  });
+  it("should return", () => {
+    expect(findElement([1, 3, 5, 9], num => num % 2 === 0)).toBe(undefined);
   });
 });
